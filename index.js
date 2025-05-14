@@ -5,8 +5,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const uuid_1 = require("uuid");
+require('dotenv').config();
 const app = (0, express_1.default)();
-const port = 3000;
+const port = process.env.PORT;
 app.use(express_1.default.json());
 // Enums
 var Action;
@@ -20,8 +21,8 @@ const appState = { chats: [
         {
             "id": "chat1",
             "title": "What is AI",
-            "created_at": "2025-05-01T10:00:00Z",
-            "last_updated_at": "2025-05-01T10:05:00Z",
+            "created_at": "2025-05-01 10:00:00Z",
+            "last_updated_at": "2025-05-01 10:05:00Z",
             "prompts": [
                 {
                     "id": "prompt1",
@@ -46,8 +47,8 @@ const appState = { chats: [
         {
             "id": "chat2",
             "title": "Health tips",
-            "created_at": "2025-05-02T09:30:00Z",
-            "last_updated_at": "2025-05-02T09:35:00Z",
+            "created_at": "2025-05-02 09:30:00Z",
+            "last_updated_at": "2025-05-02 09:35:00Z",
             "prompts": [
                 {
                     "id": "prompt2",
@@ -72,8 +73,8 @@ const appState = { chats: [
         {
             "id": "chat3",
             "title": "History of ML",
-            "created_at": "2025-05-03T11:00:00Z",
-            "last_updated_at": "2025-05-03T11:10:00Z",
+            "created_at": "2025-05-03 11:00:00Z",
+            "last_updated_at": "2025-05-03 11:10:00Z",
             "prompts": [
                 {
                     "id": "prompt3",
@@ -98,8 +99,8 @@ const appState = { chats: [
         {
             "id": "chat4",
             "title": "Email advice",
-            "created_at": "2025-05-04T15:20:00Z",
-            "last_updated_at": "2025-05-04T15:25:00Z",
+            "created_at": "2025-05-04 15:20:00Z",
+            "last_updated_at": "2025-05-04 15:25:00Z",
             "prompts": [
                 {
                     "id": "prompt4",
@@ -141,8 +142,8 @@ const appState = { chats: [
         {
             "id": "chat5",
             "title": "Simple recipe",
-            "created_at": "2025-05-05T08:00:00Z",
-            "last_updated_at": "2025-05-05T08:10:00Z",
+            "created_at": "2025-05-05 08:00:00Z",
+            "last_updated_at": "2025-05-05 08:10:00Z",
             "prompts": [
                 {
                     "id": "prompt5",
