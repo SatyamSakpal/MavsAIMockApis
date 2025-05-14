@@ -21,8 +21,8 @@ const appState = { chats: [
         {
             "id": "chat1",
             "title": "What is AI",
-            "created_at": "2025-05-01 10:00:00Z",
-            "last_updated_at": "2025-05-01 10:05:00Z",
+            "created_at": "2025-05-01 10:00:00",
+            "last_updated_at": "2025-05-01 10:05:00",
             "prompts": [
                 {
                     "id": "prompt1",
@@ -47,8 +47,8 @@ const appState = { chats: [
         {
             "id": "chat2",
             "title": "Health tips",
-            "created_at": "2025-05-02 09:30:00Z",
-            "last_updated_at": "2025-05-02 09:35:00Z",
+            "created_at": "2025-05-02 09:30:00",
+            "last_updated_at": "2025-05-02 09:35:00",
             "prompts": [
                 {
                     "id": "prompt2",
@@ -73,8 +73,8 @@ const appState = { chats: [
         {
             "id": "chat3",
             "title": "History of ML",
-            "created_at": "2025-05-03 11:00:00Z",
-            "last_updated_at": "2025-05-03 11:10:00Z",
+            "created_at": "2025-05-03 11:00:00",
+            "last_updated_at": "2025-05-03 11:10:00",
             "prompts": [
                 {
                     "id": "prompt3",
@@ -99,8 +99,8 @@ const appState = { chats: [
         {
             "id": "chat4",
             "title": "Email advice",
-            "created_at": "2025-05-04 15:20:00Z",
-            "last_updated_at": "2025-05-04 15:25:00Z",
+            "created_at": "2025-05-04 15:20:00",
+            "last_updated_at": "2025-05-04 15:25:00",
             "prompts": [
                 {
                     "id": "prompt4",
@@ -142,8 +142,8 @@ const appState = { chats: [
         {
             "id": "chat5",
             "title": "Simple recipe",
-            "created_at": "2025-05-05 08:00:00Z",
-            "last_updated_at": "2025-05-05 08:10:00Z",
+            "created_at": "2025-05-05 08:00:00",
+            "last_updated_at": "2025-05-05 08:10:00",
             "prompts": [
                 {
                     "id": "prompt5",
