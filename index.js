@@ -36,7 +36,54 @@ const appState = { chats: [
                     },
                     "prompt_response": {
                         "type": "text",
-                        "message": "Artificial Intelligence (AI) is the simulation of human intelligence by machines.",
+                        "message": `
+# Sample Markdown Document
+
+This is a **100-line** sample Markdown file.
+
+---
+
+## Table of Contents
+
+1. Introduction  
+2. Key Features  
+3. Code Example  
+4. List Example  
+5. Blockquote  
+6. Images  
+7. Links  
+8. Tables  
+9. Checklist  
+10. Conclusion  
+
+---
+
+## 1. Introduction
+
+Markdown is a lightweight markup language used to format text.
+
+---
+
+## 2. Key Features
+
+- Easy to learn  
+- Plain text formatting  
+- Converts to HTML  
+- Used in GitHub, Reddit, etc.  
+
+---
+
+## 3. Code Example
+
+Here is a sample Python code block:
+
+\`\`\`python
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("World"))
+\`\`\`
+`,
                         "format": "MD4"
                     },
                     "chat_id": "chat1",
