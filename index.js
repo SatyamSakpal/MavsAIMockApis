@@ -37,186 +37,186 @@ const appState = { chats: [
                     "prompt_response": {
                         "type": "text",
                         "message": `
-                        # Sample Markdown Document
-                        
-                        This is a **100-line** sample Markdown file.
-                        
-                        ---
-                        
-                        ## Table of Contents
-                        
-                        1. Introduction  
-                        2. Key Features  
-                        3. Code Example  
-                        4. List Example  
-                        5. Blockquote  
-                        6. Images  
-                        7. Links  
-                        8. Tables  
-                        9. Checklist  
-                        10. Conclusion  
-                        
-                        ---
-                        
-                        ## 1. Introduction
-                        
-                        Markdown is a lightweight markup language used to format text.
-                        
-                        ---
-                        
-                        ## 2. Key Features
-                        
-                        - Easy to learn  
-                        - Plain text formatting  
-                        - Converts to HTML  
-                        - Used in GitHub, Reddit, etc.  
-                        
-                        ---
-                        
-                        ## 3. Code Example
-                        
-                        Here is a sample Python code block:
-                        
-                        \`\`\`python
-                        def greet(name):
-                            return f"Hello, {name}!"
-                        
-                        print(greet("World"))
-                        \`\`\`
-                        
-                        ---
-                        
-                        ## 4. List Example
-                        
-                        ### Unordered List:
-                        
-                        - Apple  
-                        - Banana  
-                        - Cherry  
-                        
-                        ### Ordered List:
-                        
-                        1. Wake up  
-                        2. Brush teeth  
-                        3. Drink water  
-                        
-                        ---
-                        
-                        ## 5. Blockquote
-                        
-                        > Markdown is not a replacement for HTML, but it is very useful.
-                        
-                        ---
-                        
-                        ## 6. Images
-                        
-                        Here’s a placeholder image:
-                        
-                        ![Sample Image](https://via.placeholder.com/150)
-                        
-                        ---
-                        
-                        ## 7. Links
-                        
-                        [Visit OpenAI](https://www.openai.com)
-                        
-                        ---
-                        
-                        ## 8. Tables
-                        
-                        | Name     | Age | Role      |  
-                        |----------|-----|-----------|  
-                        | Alice    | 25  | Developer |  
-                        | Bob      | 30  | Designer  |  
-                        | Charlie  | 28  | Manager   |  
-                        
-                        ---
-                        
-                        ## 9. Checklist
-                        
-                        - [x] Learn Markdown  
-                        - [ ] Use Markdown in GitHub  
-                        - [ ] Share Markdown knowledge  
-                        
-                        ---
-                        
-                        ## 10. Conclusion
-                        
-                        Markdown simplifies writing and reading formatted text.
-                        
-                        ---
-                        
-                        ### Fun Fact
-                        
-                        Markdown was created by [John Gruber](https://daringfireball.net/projects/markdown/).
-                        
-                        ---
-                        
-                        ### Tips
-                        
-                        - Use \`#\` for headings.  
-                        - Use \`*\` or \`-\` for bullet points.  
-                        - Use triple backticks for code blocks.  
-                        
-                        ---
-                        
-                        ### Notes
-                        
-                        Markdown files typically use the \`.md\` or \`.markdown\` file extension.
-                        
-                        ---
-                        
-                        ### Horizontal Rule
-                        
-                        ---
-                        
-                        ### Emphasis
-                        
-                        *Italic*  
-                        **Bold**  
-                        ~~Strikethrough~~
-                        
-                        ---
-                        
-                        ### Inline Code
-                        
-                        To print something in Python: \`print("Hello World")\`
-                        
-                        ---
-                        
-                        ### Escaping Characters
-                        
-                        Use \\\* to show a literal asterisk: \\*
-                        
-                        ---
-                        
-                        ### Multilevel Lists
-                        
-                        1. Fruits  
-                           - Apple  
-                           - Orange  
-                        2. Vegetables  
-                           - Carrot  
-                           - Spinach  
-                        
-                        ---
-                        
-                        ### Task Progress
-                        
-                        - [x] Setup  
-                        - [x] Code  
-                        - [ ] Documentation  
-                        - [ ] Review  
-                        
-                        ---
-                        
-                        ### Final Thought
-                        
-                        > Simplicity is the ultimate sophistication. — *Leonardo da Vinci*
-                        
-                        ---
-                        
-                        _End of Document._
+# Sample Markdown Document
+
+This is a **100-line** sample Markdown file.
+
+---
+
+## Table of Contents
+
+1. Introduction  
+2. Key Features  
+3. Code Example  
+4. List Example  
+5. Blockquote  
+6. Images  
+7. Links  
+8. Tables  
+9. Checklist  
+10. Conclusion  
+
+---
+
+## 1. Introduction
+
+Markdown is a lightweight markup language used to format text.
+
+---
+
+## 2. Key Features
+
+- Easy to learn  
+- Plain text formatting  
+- Converts to HTML  
+- Used in GitHub, Reddit, etc.  
+
+---
+
+## 3. Code Example
+
+Here is a sample Python code block:
+
+\`\`\`python
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("World"))
+\`\`\`
+
+---
+
+## 4. List Example
+
+### Unordered List:
+
+- Apple  
+- Banana  
+- Cherry  
+
+### Ordered List:
+
+1. Wake up  
+2. Brush teeth  
+3. Drink water  
+
+---
+
+## 5. Blockquote
+
+> Markdown is not a replacement for HTML, but it is very useful.
+
+---
+
+## 6. Images
+
+Here’s a placeholder image:
+
+![Sample Image](https://via.placeholder.com/150)
+
+---
+
+## 7. Links
+
+[Visit OpenAI](https://www.openai.com)
+
+---
+
+## 8. Tables
+
+| Name     | Age | Role      |  
+|----------|-----|-----------|  
+| Alice    | 25  | Developer |  
+| Bob      | 30  | Designer  |  
+| Charlie  | 28  | Manager   |  
+
+---
+
+## 9. Checklist
+
+- [x] Learn Markdown  
+- [ ] Use Markdown in GitHub  
+- [ ] Share Markdown knowledge  
+
+---
+
+## 10. Conclusion
+
+Markdown simplifies writing and reading formatted text.
+
+---
+
+### Fun Fact
+
+Markdown was created by [John Gruber](https://daringfireball.net/projects/markdown/).
+
+---
+
+### Tips
+
+- Use \`#\` for headings.  
+- Use \`*\` or \`-\` for bullet points.  
+- Use triple backticks for code blocks.  
+
+---
+
+### Notes
+
+Markdown files typically use the \`.md\` or \`.markdown\` file extension.
+
+---
+
+### Horizontal Rule
+
+---
+
+### Emphasis
+
+*Italic*  
+**Bold**  
+~~Strikethrough~~
+
+---
+
+### Inline Code
+
+To print something in Python: \`print("Hello World")\`
+
+---
+
+### Escaping Characters
+
+Use \\\* to show a literal asterisk: \\*
+
+---
+
+### Multilevel Lists
+
+1. Fruits  
+   - Apple  
+   - Orange  
+2. Vegetables  
+   - Carrot  
+   - Spinach  
+
+---
+
+### Task Progress
+
+- [x] Setup  
+- [x] Code  
+- [ ] Documentation  
+- [ ] Review  
+
+---
+
+### Final Thought
+
+> Simplicity is the ultimate sophistication. — *Leonardo da Vinci*
+
+---
+
+_End of Document._
                         `,
                         "format": "MD4"
                     },
