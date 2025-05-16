@@ -423,6 +423,7 @@ app.post('/api/v1/prompts/:promptId/process', (req, res) => {
     const { promptId } = req.params;
     for (const chat of appState.chats) {
         const promptObj = chat.prompts.find(p => p.id === promptId);
+        console.log(`prompt Object: ${promptObj}`);
         if (promptObj) {
             const response = {
                 type: 'text',
@@ -431,7 +432,8 @@ app.post('/api/v1/prompts/:promptId/process', (req, res) => {
             };
             promptObj.prompt_response = response;
             console.log(`Prompt processed for Prompt ID: ${promptId}`);
-            res.status(200).json(response);
+            console.log(`response: ${response}`);
+            res.status(202).json(response);
             return;
         }
     }
