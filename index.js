@@ -421,13 +421,12 @@ app.post('/api/v1/chats/:chatId/prompts/preprocess', (req, res) => {
 app.post('/api/v1/prompts/:promptId/process', (req, res) => {
     console.log(`POST /api/v1/prompts/${req.params.promptId}/process called with body:`, req.body);
     const { promptId } = req.params;
-    const { prompt } = req.body;
     for (const chat of appState.chats) {
         const promptObj = chat.prompts.find(p => p.id === promptId);
         if (promptObj) {
             const response = {
                 type: 'text',
-                message: `Processed: ${prompt}`,
+                message: `Processed: ${promptObj.prompt_request.message}`,
                 format: 'MD4',
             };
             promptObj.prompt_response = response;
