@@ -36,7 +36,187 @@ const appState = { chats: [
                     },
                     "prompt_response": {
                         "type": "text",
-                        "message": "Artificial Intelligence (AI) is the simulation of human intelligence by machines.",
+                        "message": `# Sample Markdown Document
+
+This is a **100-line** sample Markdown file.
+
+---
+
+## Table of Contents
+
+1. Introduction  
+2. Key Features  
+3. Code Example  
+4. List Example  
+5. Blockquote  
+6. Images  
+7. Links  
+8. Tables  
+9. Checklist  
+10. Conclusion  
+
+---
+
+## 1. Introduction
+
+Markdown is a lightweight markup language used to format text.
+
+---
+
+## 2. Key Features
+
+- Easy to learn  
+- Plain text formatting  
+- Converts to HTML  
+- Used in GitHub, Reddit, etc.  
+
+---
+
+## 3. Code Example
+
+Here is a sample Python code block:
+
+\`\`\`python
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("World"))
+\`\`\`
+
+---
+
+## 4. List Example
+
+### Unordered List:
+
+- Apple  
+- Banana  
+- Cherry  
+
+### Ordered List:
+
+1. Wake up  
+2. Brush teeth  
+3. Drink water  
+
+---
+
+## 5. Blockquote
+
+> Markdown is not a replacement for HTML, but it is very useful.
+
+---
+
+## 6. Images
+
+Here’s a placeholder image:
+
+![Sample Image](https://via.placeholder.com/150)
+
+---
+
+## 7. Links
+
+[Visit OpenAI](https://www.openai.com)
+
+---
+
+## 8. Tables
+
+| Name     | Age | Role      |  
+|----------|-----|-----------|  
+| Alice    | 25  | Developer |  
+| Bob      | 30  | Designer  |  
+| Charlie  | 28  | Manager   |  
+
+---
+
+## 9. Checklist
+
+- [x] Learn Markdown  
+- [ ] Use Markdown in GitHub  
+- [ ] Share Markdown knowledge  
+
+---
+
+## 10. Conclusion
+
+Markdown simplifies writing and reading formatted text.
+
+---
+
+### Fun Fact
+
+Markdown was created by [John Gruber](https://daringfireball.net/projects/markdown/).
+
+---
+
+### Tips
+
+- Use \`#\` for headings.  
+- Use \`*\` or \`-\` for bullet points.  
+- Use triple backticks for code blocks.  
+
+---
+
+### Notes
+
+Markdown files typically use the \`.md\` or \`.markdown\` file extension.
+
+---
+
+### Horizontal Rule
+
+---
+
+### Emphasis
+
+*Italic*  
+**Bold**  
+~~Strikethrough~~
+
+---
+
+### Inline Code
+
+To print something in Python: \`print("Hello World")\`
+
+---
+
+### Escaping Characters
+
+Use \\\* to show a literal asterisk: \\*
+
+---
+
+### Multilevel Lists
+
+1. Fruits  
+   - Apple  
+   - Orange  
+2. Vegetables  
+   - Carrot  
+   - Spinach  
+
+---
+
+### Task Progress
+
+- [x] Setup  
+- [x] Code  
+- [ ] Documentation  
+- [ ] Review  
+
+---
+
+### Final Thought
+
+> Simplicity is the ultimate sophistication. — *Leonardo da Vinci*
+
+---
+
+_End of Document._
+                        `,
                         "format": "MD4"
                     },
                     "chat_id": "chat1",
@@ -163,23 +343,25 @@ const appState = { chats: [
                     "chat_id": "chat5",
                     "sequence_number": 1
                 }
-            ]
+            ],
         }
     ] };
 // Constants
 const SecureBackendURL = 'https://secure.backend/api';
 const SecureBackendSecret = 'super-secret-key';
-// Utility: Create Chat Title
+// Utility
 function generateTitle(prompt) {
     return prompt.substring(0, 10);
 }
 // ---------------- Routes ---------------- //
 // GET all chats
 app.get('/api/v1/chats', (req, res) => {
+    console.log('GET /api/v1/chats called');
     res.json(appState.chats);
 });
 // POST create new chat with initial prompt
 app.post('/api/v1/chats', (req, res) => {
+    console.log('POST /api/v1/chats called with body:', req.body);
     const { prompt } = req.body;
     const chatId = (0, uuid_1.v4)();
     const timestamp = new Date().toISOString();
@@ -201,14 +383,17 @@ app.post('/api/v1/chats', (req, res) => {
         ],
     };
     appState.chats.push(newChat);
+    console.log(`Chat created with ID: ${chatId}`);
     res.status(201).json(newChat);
 });
 // POST preprocess prompt
 app.post('/api/v1/chats/:chatId/prompts/preprocess', (req, res) => {
+    console.log(`POST /api/v1/chats/${req.params.chatId}/prompts/preprocess called with body:`, req.body);
     const { chatId } = req.params;
     const { prompt } = req.body;
     const chat = appState.chats.find(c => c.id === chatId);
     if (!chat) {
+        console.warn(`Chat with ID ${chatId} not found`);
         res.status(404).json({ error: 'Chat not found' });
         return;
     }
@@ -228,10 +413,12 @@ app.post('/api/v1/chats/:chatId/prompts/preprocess', (req, res) => {
     };
     chat.prompts.push(promptObj);
     chat.last_updated_at = new Date().toISOString();
+    console.log(`Prompt preprocessed and added to chat ID: ${chatId}, Prompt ID: ${promptId}`);
     res.status(200).json(promptObj);
 });
 // POST process prompt
 app.post('/api/prompts/:promptId/process', (req, res) => {
+    console.log(`POST /api/prompts/${req.params.promptId}/process called with body:`, req.body);
     const { promptId } = req.params;
     const { prompt } = req.body;
     for (const chat of appState.chats) {
@@ -243,17 +430,21 @@ app.post('/api/prompts/:promptId/process', (req, res) => {
                 format: 'MD4',
             };
             promptObj.prompt_response = response;
+            console.log(`Prompt processed for Prompt ID: ${promptId}`);
             res.status(200).json(response);
             return;
         }
     }
+    console.warn(`Prompt with ID ${promptId} not found`);
     res.status(404).json({ error: 'Prompt not found' });
 });
 // GET all prompts of a chat
 app.get('/api/v1/chats/:chatId/prompts', (req, res) => {
+    console.log(`GET /api/v1/chats/${req.params.chatId}/prompts called`);
     const { chatId } = req.params;
     const chat = appState.chats.find(c => c.id === chatId);
     if (!chat) {
+        console.warn(`Chat with ID ${chatId} not found`);
         res.status(404).json({ error: 'Chat not found' });
         return;
     }
