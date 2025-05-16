@@ -390,7 +390,7 @@ app.post('/api/v1/chats', (req, res) => {
 app.post('/api/v1/chats/:chatId/prompts/preprocess', (req, res) => {
     console.log(`POST /api/v1/chats/${req.params.chatId}/prompts/preprocess called with body:`, req.body);
     const { chatId } = req.params;
-    const { prompt } = req.body;
+    const { prompt_text } = req.body;
     const chat = appState.chats.find(c => c.id === chatId);
     if (!chat) {
         console.warn(`Chat with ID ${chatId} not found`);
@@ -402,7 +402,7 @@ app.post('/api/v1/chats/:chatId/prompts/preprocess', (req, res) => {
         id: promptId,
         prompt_request: {
             type: 'text',
-            message: prompt,
+            message: prompt_text,
             pre_processed_message: {
                 action: Action.PROCESS,
                 risks: [],
@@ -414,11 +414,12 @@ app.post('/api/v1/chats/:chatId/prompts/preprocess', (req, res) => {
     chat.prompts.push(promptObj);
     chat.last_updated_at = new Date().toISOString();
     console.log(`Prompt preprocessed and added to chat ID: ${chatId}, Prompt ID: ${promptId}`);
+    console.log(`Prompt Object: ${promptObj}`);
     res.status(200).json(promptObj);
 });
 // POST process prompt
-app.post('/api/prompts/:promptId/process', (req, res) => {
-    console.log(`POST /api/prompts/${req.params.promptId}/process called with body:`, req.body);
+app.post('/api/v1/prompts/:promptId/process', (req, res) => {
+    console.log(`POST /api/v1/prompts/${req.params.promptId}/process called with body:`, req.body);
     const { promptId } = req.params;
     const { prompt } = req.body;
     for (const chat of appState.chats) {
