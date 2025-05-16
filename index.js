@@ -362,12 +362,12 @@ app.get('/api/v1/chats', (req, res) => {
 // POST create new chat with initial prompt
 app.post('/api/v1/chats', (req, res) => {
     console.log('POST /api/v1/chats called with body:', req.body);
-    const { prompt } = req.body;
+    const { prompt_text } = req.body;
     const chatId = (0, uuid_1.v4)();
     const timestamp = new Date().toISOString();
     const newChat = {
         id: chatId,
-        title: generateTitle(prompt),
+        title: generateTitle(prompt_text),
         created_at: timestamp,
         last_updated_at: timestamp,
         prompts: [
@@ -375,7 +375,7 @@ app.post('/api/v1/chats', (req, res) => {
                 "id": (0, uuid_1.v4)(),
                 "prompt_request": {
                     "type": "text",
-                    "message": prompt,
+                    "message": prompt_text,
                 },
                 "chat_id": chatId,
                 "sequence_number": 1
