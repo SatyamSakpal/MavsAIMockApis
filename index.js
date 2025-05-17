@@ -21,8 +21,8 @@ const appState = { chats: [
         {
             "id": "chat1",
             "title": "What is AI",
-            "created_at": "2025-05-01 10:00:00.579+00",
-            "last_updated_at": "2025-05-01 10:05:00.579+00",
+            "created_at": "2025-05-01T10:00:00.579+00Z",
+            "last_updated_at": "2025-05-01T10:05:00.579+00Z",
             "prompts": [
                 {
                     "id": "prompt1",
@@ -227,8 +227,8 @@ _End of Document._
         {
             "id": "chat2",
             "title": "Health tips",
-            "created_at": "2025-05-02 09:30:00.579+00",
-            "last_updated_at": "2025-05-02 09:35:00.579+00",
+            "created_at": "2025-05-02T09:30:00.579+00Z",
+            "last_updated_at": "2025-05-02T09:35:00.579+00Z",
             "prompts": [
                 {
                     "id": "prompt2",
@@ -253,8 +253,8 @@ _End of Document._
         {
             "id": "chat3",
             "title": "History of ML",
-            "created_at": "2025-05-03 11:00:00.579+00",
-            "last_updated_at": "2025-05-03 11:10:00.579+00",
+            "created_at": "2025-05-03T11:00:00.579+00Z",
+            "last_updated_at": "2025-05-03T11:10:00.579+00Z",
             "prompts": [
                 {
                     "id": "prompt3",
@@ -279,8 +279,8 @@ _End of Document._
         {
             "id": "chat4",
             "title": "Email advice",
-            "created_at": "2025-05-04 15:20:00.579+00",
-            "last_updated_at": "2025-05-04 15:25:00.579+00",
+            "created_at": "2025-05-04T15:20:00.579+00Z",
+            "last_updated_at": "2025-05-04T15:25:00.579+00Z",
             "prompts": [
                 {
                     "id": "prompt4",
@@ -322,8 +322,8 @@ _End of Document._
         {
             "id": "chat5",
             "title": "Simple recipe",
-            "created_at": "2025-05-05 08:00:00.579+00",
-            "last_updated_at": "2025-05-05 08:10:00.579+00",
+            "created_at": "2025-05-05T08:00:00.579+00Z",
+            "last_updated_at": "2025-05-05T08:10:00.579+00Z",
             "prompts": [
                 {
                     "id": "prompt5",
