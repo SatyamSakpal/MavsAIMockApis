@@ -370,17 +370,7 @@ app.post('/api/v1/chats', (req, res) => {
         title: generateTitle(prompt_text),
         created_at: timestamp,
         last_updated_at: timestamp,
-        prompts: [
-            {
-                "id": (0, uuid_1.v4)(),
-                "prompt_request": {
-                    "type": "text",
-                    "message": prompt_text,
-                },
-                "chat_id": chatId,
-                "sequence_number": 1
-            }
-        ],
+        prompts: [],
     };
     appState.chats.push(newChat);
     console.log(`Chat created with ID: ${chatId}`);
