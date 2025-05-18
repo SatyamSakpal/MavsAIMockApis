@@ -30,7 +30,7 @@ const appState = { chats: [
                     "id": "prompt1",
                     "prompt_request": {
                         "type": "text",
-                        "message": "What is artificial intelligence?",
+                        "message": "What is artificial intelligence? This is a long title",
                         "pre_processed_message": {
                             "action": Action.PROCESS,
                             "risks": []
