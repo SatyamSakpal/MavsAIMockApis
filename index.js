@@ -606,6 +606,266 @@ _End of Document._
                     "sequence_number": 1
                 }
             ]
+        },
+        {
+            "id": "chat16",
+            "title": "Morning Routine",
+            "created_at": "2025-05-18T07:10:00.579+00Z",
+            "last_updated_at": "2025-05-18T07:15:00.579+00Z",
+            "prompts": [
+                {
+                    "id": "prompt6",
+                    "prompt_request": {
+                        "type": "text",
+                        "message": "Suggest a healthy morning routine",
+                        "pre_processed_message": {
+                            "action": Action.PROCESS,
+                            "risks": []
+                        }
+                    },
+                    "prompt_response": {
+                        "type": "text",
+                        "message": "Wake up early, hydrate, meditate, and go for a walk.",
+                        "format": "MD4"
+                    },
+                    "chat_id": "chat16",
+                    "sequence_number": 1
+                }
+            ]
+        },
+        {
+            "id": "chat17",
+            "title": "Stress relief",
+            "created_at": "2025-05-17T12:30:00.579+00Z",
+            "last_updated_at": "2025-05-17T12:35:00.579+00Z",
+            "prompts": [
+                {
+                    "id": "prompt7",
+                    "prompt_request": {
+                        "type": "text",
+                        "message": "How to relieve stress quickly?",
+                        "pre_processed_message": {
+                            "action": Action.PROCESS,
+                            "risks": []
+                        }
+                    },
+                    "prompt_response": {
+                        "type": "text",
+                        "message": "Take deep breaths, stretch, or listen to calming music.",
+                        "format": "MD4"
+                    },
+                    "chat_id": "chat17",
+                    "sequence_number": 1
+                }
+            ]
+        },
+        {
+            "id": "chat18",
+            "title": "AI vs ML",
+            "created_at": "2025-05-11T10:45:00.579+00Z",
+            "last_updated_at": "2025-05-11T10:50:00.579+00Z",
+            "prompts": [
+                {
+                    "id": "prompt8",
+                    "prompt_request": {
+                        "type": "text",
+                        "message": "Difference between AI and ML?",
+                        "pre_processed_message": {
+                            "action": Action.PROCESS,
+                            "risks": []
+                        }
+                    },
+                    "prompt_response": {
+                        "type": "text",
+                        "message": "AI is the broader concept, ML is a subset that focuses on learning from data.",
+                        "format": "MD4"
+                    },
+                    "chat_id": "chat18",
+                    "sequence_number": 1
+                }
+            ]
+        },
+        {
+            "id": "chat19",
+            "title": "Cloud Types",
+            "created_at": "2025-04-25T09:15:00.579+00Z",
+            "last_updated_at": "2025-04-25T09:20:00.579+00Z",
+            "prompts": [
+                {
+                    "id": "prompt9",
+                    "prompt_request": {
+                        "type": "text",
+                        "message": "What are the different types of clouds?",
+                        "pre_processed_message": {
+                            "action": Action.PROCESS,
+                            "risks": []
+                        }
+                    },
+                    "prompt_response": {
+                        "type": "text",
+                        "message": "Cirrus, cumulus, stratus, and nimbus are the four main types.",
+                        "format": "MD4"
+                    },
+                    "chat_id": "chat19",
+                    "sequence_number": 1
+                }
+            ]
+        },
+        {
+            "id": "chat20",
+            "title": "Fun facts",
+            "created_at": "2025-04-19T08:30:00.579+00Z",
+            "last_updated_at": "2025-04-19T08:35:00.579+00Z",
+            "prompts": [
+                {
+                    "id": "prompt10",
+                    "prompt_request": {
+                        "type": "text",
+                        "message": "Tell me a fun fact",
+                        "pre_processed_message": {
+                            "action": Action.PROCESS,
+                            "risks": []
+                        }
+                    },
+                    "prompt_response": {
+                        "type": "text",
+                        "message": "Octopuses have three hearts and blue blood.",
+                        "format": "MD4"
+                    },
+                    "chat_id": "chat20",
+                    "sequence_number": 1
+                }
+            ]
+        },
+        {
+            "id": "chat21",
+            "title": "Solar System",
+            "created_at": "2025-03-15T11:00:00.579+00Z",
+            "last_updated_at": "2025-03-15T11:05:00.579+00Z",
+            "prompts": [
+                {
+                    "id": "prompt11",
+                    "prompt_request": {
+                        "type": "text",
+                        "message": "How many planets are in the solar system?",
+                        "pre_processed_message": {
+                            "action": Action.PROCESS,
+                            "risks": []
+                        }
+                    },
+                    "prompt_response": {
+                        "type": "text",
+                        "message": "There are 8 planets in our solar system.",
+                        "format": "MD4"
+                    },
+                    "chat_id": "chat21",
+                    "sequence_number": 1
+                }
+            ]
+        },
+        {
+            "id": "chat22",
+            "title": "Meditation guide",
+            "created_at": "2025-02-20T14:45:00.579+00Z",
+            "last_updated_at": "2025-02-20T14:50:00.579+00Z",
+            "prompts": [
+                {
+                    "id": "prompt12",
+                    "prompt_request": {
+                        "type": "text",
+                        "message": "How to start meditating?",
+                        "pre_processed_message": {
+                            "action": Action.PROCESS,
+                            "risks": []
+                        }
+                    },
+                    "prompt_response": {
+                        "type": "text",
+                        "message": "Sit quietly, focus on your breath, and let go of distractions.",
+                        "format": "MD4"
+                    },
+                    "chat_id": "chat22",
+                    "sequence_number": 1
+                }
+            ]
+        },
+        {
+            "id": "chat23",
+            "title": "Ocean facts",
+            "created_at": "2025-01-25T10:15:00.579+00Z",
+            "last_updated_at": "2025-01-25T10:20:00.579+00Z",
+            "prompts": [
+                {
+                    "id": "prompt13",
+                    "prompt_request": {
+                        "type": "text",
+                        "message": "How deep is the ocean?",
+                        "pre_processed_message": {
+                            "action": Action.PROCESS,
+                            "risks": []
+                        }
+                    },
+                    "prompt_response": {
+                        "type": "text",
+                        "message": "The Mariana Trench is the deepest point, about 11,000 meters deep.",
+                        "format": "MD4"
+                    },
+                    "chat_id": "chat23",
+                    "sequence_number": 1
+                }
+            ]
+        },
+        {
+            "id": "chat24",
+            "title": "Startup ideas",
+            "created_at": "2024-12-05T13:00:00.579+00Z",
+            "last_updated_at": "2024-12-05T13:05:00.579+00Z",
+            "prompts": [
+                {
+                    "id": "prompt14",
+                    "prompt_request": {
+                        "type": "text",
+                        "message": "Suggest a startup idea",
+                        "pre_processed_message": {
+                            "action": Action.PROCESS,
+                            "risks": []
+                        }
+                    },
+                    "prompt_response": {
+                        "type": "text",
+                        "message": "An app that tracks food waste and suggests recipes to use leftovers.",
+                        "format": "MD4"
+                    },
+                    "chat_id": "chat24",
+                    "sequence_number": 1
+                }
+            ]
+        },
+        {
+            "id": "chat25",
+            "title": "Battery care",
+            "created_at": "2025-03-10T16:30:00.579+00Z",
+            "last_updated_at": "2025-03-10T16:35:00.579+00Z",
+            "prompts": [
+                {
+                    "id": "prompt15",
+                    "prompt_request": {
+                        "type": "text",
+                        "message": "How to take care of your phone battery?",
+                        "pre_processed_message": {
+                            "action": Action.PROCESS,
+                            "risks": []
+                        }
+                    },
+                    "prompt_response": {
+                        "type": "text",
+                        "message": "Avoid 0% or 100% charge, use original charger, avoid heat.",
+                        "format": "MD4"
+                    },
+                    "chat_id": "chat25",
+                    "sequence_number": 1
+                }
+            ]
         }
     ] };
 // Constants
