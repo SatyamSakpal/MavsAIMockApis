@@ -22,7 +22,7 @@ var Action;
 const appState = { chats: [
         {
             "id": "chat1",
-            "title": "What is AI",
+            "title": "What is AI This is a long title",
             "created_at": "2025-05-01T10:00:00.579+00Z",
             "last_updated_at": "2025-05-01T10:05:00.579+00Z",
             "prompts": [
