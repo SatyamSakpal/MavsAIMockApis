@@ -344,7 +344,267 @@ _End of Document._
                     "sequence_number": 1
                 }
             ],
-        }
+        },
+        {
+        "id": "chat6",
+        "title": "Morning Routine",
+        "created_at": "2025-05-18T07:30:00.579+00Z",
+        "last_updated_at": "2025-05-18T07:32:00.579+00Z",
+        "prompts": [
+            {
+                "id": "prompt6",
+                "prompt_request": {
+                    "type": "text",
+                    "message": "What’s a good morning routine?",
+                    "pre_processed_message": {
+                        "action": "PROCESS",
+                        "risks": []
+                    }
+                },
+                "prompt_response": {
+                    "type": "text",
+                    "message": "Wake up early, hydrate, meditate, and plan your day.",
+                    "format": "MD4"
+                },
+                "chat_id": "chat6",
+                "sequence_number": 1
+            }
+        ]
+    },
+    {
+        "id": "chat7",
+        "title": "JavaScript Basics",
+        "created_at": "2025-05-18T08:45:00.579+00Z",
+        "last_updated_at": "2025-05-18T08:50:00.579+00Z",
+        "prompts": [
+            {
+                "id": "prompt7",
+                "prompt_request": {
+                    "type": "text",
+                    "message": "What are JavaScript data types?",
+                    "pre_processed_message": {
+                        "action": "PROCESS",
+                        "risks": []
+                    }
+                },
+                "prompt_response": {
+                    "type": "text",
+                    "message": "JavaScript has primitive types like string, number, boolean, null, undefined, and symbol.",
+                    "format": "MD4"
+                },
+                "chat_id": "chat7",
+                "sequence_number": 1
+            }
+        ]
+    },
+    {
+        "id": "chat8",
+        "title": "Hydration Facts",
+        "created_at": "2025-05-18T09:10:00.579+00Z",
+        "last_updated_at": "2025-05-18T09:15:00.579+00Z",
+        "prompts": [
+            {
+                "id": "prompt8",
+                "prompt_request": {
+                    "type": "text",
+                    "message": "Why is hydration important?",
+                    "pre_processed_message": {
+                        "action": "PROCESS",
+                        "risks": []
+                    }
+                },
+                "prompt_response": {
+                    "type": "text",
+                    "message": "Staying hydrated supports digestion, circulation, and energy levels.",
+                    "format": "MD4"
+                },
+                "chat_id": "chat8",
+                "sequence_number": 1
+            }
+        ]
+    },
+    {
+        "id": "chat9",
+        "title": "Study Tips",
+        "created_at": "2025-05-17T10:00:00.579+00Z",
+        "last_updated_at": "2025-05-17T10:05:00.579+00Z",
+        "prompts": [
+            {
+                "id": "prompt9",
+                "prompt_request": {
+                    "type": "text",
+                    "message": "How can I study effectively?",
+                    "pre_processed_message": {
+                        "action": "PROCESS",
+                        "risks": []
+                    }
+                },
+                "prompt_response": {
+                    "type": "text",
+                    "message": "Use the Pomodoro technique, take breaks, and stay consistent.",
+                    "format": "MD4"
+                },
+                "chat_id": "chat9",
+                "sequence_number": 1
+            }
+        ]
+    },
+    {
+        "id": "chat10",
+        "title": "Sleep Benefits",
+        "created_at": "2025-05-17T11:00:00.579+00Z",
+        "last_updated_at": "2025-05-17T11:05:00.579+00Z",
+        "prompts": [
+            {
+                "id": "prompt10",
+                "prompt_request": {
+                    "type": "text",
+                    "message": "Why is sleep important?",
+                    "pre_processed_message": {
+                        "action": "PROCESS",
+                        "risks": []
+                    }
+                },
+                "prompt_response": {
+                    "type": "text",
+                    "message": "Sleep helps with memory, mood, and physical recovery.",
+                    "format": "MD4"
+                },
+                "chat_id": "chat10",
+                "sequence_number": 1
+            }
+        ]
+    },
+    {
+        "id": "chat11",
+        "title": "Python Lists",
+        "created_at": "2025-05-17T12:00:00.579+00Z",
+        "last_updated_at": "2025-05-17T12:05:00.579+00Z",
+        "prompts": [
+            {
+                "id": "prompt11",
+                "prompt_request": {
+                    "type": "text",
+                    "message": "How do Python lists work?",
+                    "pre_processed_message": {
+                        "action": "PROCESS",
+                        "risks": []
+                    }
+                },
+                "prompt_response": {
+                    "type": "text",
+                    "message": "Python lists are ordered, mutable collections of items.",
+                    "format": "MD4"
+                },
+                "chat_id": "chat11",
+                "sequence_number": 1
+            }
+        ]
+    },
+    {
+        "id": "chat12",
+        "title": "Benefits of Yoga",
+        "created_at": "2025-05-11T06:30:00.579+00Z",
+        "last_updated_at": "2025-05-11T06:35:00.579+00Z",
+        "prompts": [
+            {
+                "id": "prompt12",
+                "prompt_request": {
+                    "type": "text",
+                    "message": "What are the benefits of yoga?",
+                    "pre_processed_message": {
+                        "action": "PROCESS",
+                        "risks": []
+                    }
+                },
+                "prompt_response": {
+                    "type": "text",
+                    "message": "Yoga improves flexibility, reduces stress, and boosts focus.",
+                    "format": "MD4"
+                },
+                "chat_id": "chat12",
+                "sequence_number": 1
+            }
+        ]
+    },
+    {
+        "id": "chat13",
+        "title": "Motivational Quote",
+        "created_at": "2025-05-11T07:00:00.579+00Z",
+        "last_updated_at": "2025-05-11T07:05:00.579+00Z",
+        "prompts": [
+            {
+                "id": "prompt13",
+                "prompt_request": {
+                    "type": "text",
+                    "message": "Give me a motivational quote",
+                    "pre_processed_message": {
+                        "action": "PROCESS",
+                        "risks": []
+                    }
+                },
+                "prompt_response": {
+                    "type": "text",
+                    "message": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+                    "format": "MD4"
+                },
+                "chat_id": "chat13",
+                "sequence_number": 1
+            }
+        ]
+    },
+    {
+        "id": "chat14",
+        "title": "Cooking Tip",
+        "created_at": "2025-05-11T08:15:00.579+00Z",
+        "last_updated_at": "2025-05-11T08:20:00.579+00Z",
+        "prompts": [
+            {
+                "id": "prompt14",
+                "prompt_request": {
+                    "type": "text",
+                    "message": "What’s a quick cooking tip?",
+                    "pre_processed_message": {
+                        "action": "PROCESS",
+                        "risks": []
+                    }
+                },
+                "prompt_response": {
+                    "type": "text",
+                    "message": "Prep all ingredients before starting to cook for better efficiency.",
+                    "format": "MD4"
+                },
+                "chat_id": "chat14",
+                "sequence_number": 1
+            }
+        ]
+    },
+    {
+        "id": "chat15",
+        "title": "Learning Goals",
+        "created_at": "2025-05-11T09:00:00.579+00Z",
+        "last_updated_at": "2025-05-11T09:05:00.579+00Z",
+        "prompts": [
+            {
+                "id": "prompt15",
+                "prompt_request": {
+                    "type": "text",
+                    "message": "How do I set effective learning goals?",
+                    "pre_processed_message": {
+                        "action": "PROCESS",
+                        "risks": []
+                    }
+                },
+                "prompt_response": {
+                    "type": "text",
+                    "message": "Use SMART goals: Specific, Measurable, Achievable, Relevant, and Time-bound.",
+                    "format": "MD4"
+                },
+                "chat_id": "chat15",
+                "sequence_number": 1
+            }
+        ]
+    }
     ] };
 // Constants
 const SecureBackendURL = 'https://secure.backend/api';
