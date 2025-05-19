@@ -11,6 +11,14 @@ const app = (0, express_1.default)();
 const port = process.env.PORT;
 app.use((0, cors_1.default)());
 app.use(express_1.default.json());
+function delayMiddleware(ms) {
+    return (req, res, next) => {
+        setTimeout(() => {
+            next();
+        }, ms);
+    };
+}
+app.use(delayMiddleware(4000));
 // Enums
 var Action;
 (function (Action) {
