@@ -18,7 +18,6 @@ function delayMiddleware(ms) {
         }, ms);
     };
 }
-app.use(delayMiddleware(4000));
 // Enums
 var Action;
 (function (Action) {
@@ -938,7 +937,7 @@ app.post('/api/v1/chats/:chatId/prompts/preprocess', (req, res) => {
     res.status(200).json(promptObj);
 });
 // POST process prompt
-app.post('/api/v1/prompts/:promptId/process', (req, res) => {
+app.post('/api/v1/prompts/:promptId/process', delayMiddleware(4000), (req, res) => {
     console.log(`POST /api/v1/prompts/${req.params.promptId}/process called with body:`, req.body);
     const { promptId } = req.params;
     for (const chat of appState.chats) {
