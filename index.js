@@ -962,9 +962,8 @@ app.post('/api/v1/prompts/:promptId/process', delayMiddleware(4000), (req, res) 
             const response = {
                 type: 'text',
                 message: `Processed: ${promptObj.prompt_request.message}`,
-                format: 'MD4',
             };
-            promptObj.prompt_response = response;
+            // promptObj.prompt_response = response;
             console.log(`Prompt processed for Prompt ID: ${promptId}`);
             console.log(`response: ${response}`);
             res.status(202).json(response);
@@ -990,3 +989,36 @@ app.get('/api/v1/chats/:chatId/prompts', (req, res) => {
 app.listen(port, () => {
     console.log(`Server listening at http://localhost:${port}`);
 });
+// prompt_request: {
+//     "type": "text",
+//     "message": "Michael Johnson stays in Johnpur. Sam is working in a bank in Pune.,
+//     "pre_processed_message": {
+//         "action": "mask",
+//         "risks": [
+//             {
+//                 "category": "PII",
+//                 "suggested_action": "mask",
+//                 "pii_risk_details": {
+//                     "modified_message": "John Doe stays in Johnpur. John is working in a bank in Mumbai.",
+//                     "pii_data": [
+//                         {
+//                             "type": "PERSON",
+//                             "original": "Michael Johnson",
+//                             "replacement": "John Doe"
+//                         },
+//                         {
+//                             "type": "PERSON",
+//                             "original": "Michael",
+//                             "replacement": "John"
+//                         },
+//                         {
+//                             "type": "PLACE",
+//                             "original": "Pune",
+//                             "replacement": "Mumbai"
+//                         }
+//                     ]
+//                 }
+//             }
+//         ]
+//     }
+// },
