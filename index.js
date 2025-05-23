@@ -962,8 +962,9 @@ app.post('/api/v1/prompts/:promptId/process', delayMiddleware(4000), (req, res) 
             const response = {
                 type: 'text',
                 message: `Processed: ${promptObj.prompt_request.message}`,
+                format: 'MD4',
             };
-            // promptObj.prompt_response = response;
+            promptObj.prompt_response = response;
             console.log(`Prompt processed for Prompt ID: ${promptId}`);
             console.log(`response: ${response}`);
             res.status(202).json(response);
