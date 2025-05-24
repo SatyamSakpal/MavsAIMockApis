@@ -906,8 +906,6 @@ app.get('/api/v1/chats', (req, res) => {
 // POST create new chat with initial prompt
 app.post('/api/v1/chats', (req, res) => {
     console.log('POST /api/v1/chats called with body:', req.body);
-    res.status(500).json('not found');
-    return;
     const { prompt_text } = req.body;
     const chatId = (0, uuid_1.v4)();
     const timestamp = new Date().toISOString();
@@ -956,6 +954,7 @@ app.post('/api/v1/chats/:chatId/prompts/preprocess', (req, res) => {
 // POST process prompt
 app.post('/api/v1/prompts/:promptId/process', delayMiddleware(4000), (req, res) => {
     console.log(`POST /api/v1/prompts/${req.params.promptId}/process called with body:`, req.body);
+    res.status(500).json('not found');
     const { promptId } = req.params;
     for (const chat of appState.chats) {
         const promptObj = chat.prompts.find(p => p.id === promptId);
@@ -979,7 +978,6 @@ app.post('/api/v1/prompts/:promptId/process', delayMiddleware(4000), (req, res) 
 // GET all prompts of a chat
 app.get('/api/v1/chats/:chatId/prompts', (req, res) => {
     console.log(`GET /api/v1/chats/${req.params.chatId}/prompts called`);
-    res.status(500).json('not found');
     const { chatId } = req.params;
     const chat = appState.chats.find(c => c.id === chatId);
     if (!chat) {
