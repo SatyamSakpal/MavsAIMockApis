@@ -923,6 +923,7 @@ app.post('/api/v1/chats', (req, res) => {
 // POST preprocess prompt
 app.post('/api/v1/chats/:chatId/prompts/preprocess', (req, res) => {
     console.log(`POST /api/v1/chats/${req.params.chatId}/prompts/preprocess called with body:`, req.body);
+    res.status(500).json('not found');
     const { chatId } = req.params;
     const { prompt_text } = req.body;
     const chat = appState.chats.find(c => c.id === chatId);
@@ -954,7 +955,6 @@ app.post('/api/v1/chats/:chatId/prompts/preprocess', (req, res) => {
 // POST process prompt
 app.post('/api/v1/prompts/:promptId/process', delayMiddleware(4000), (req, res) => {
     console.log(`POST /api/v1/prompts/${req.params.promptId}/process called with body:`, req.body);
-    res.status(500).json('not found');
     const { promptId } = req.params;
     for (const chat of appState.chats) {
         const promptObj = chat.prompts.find(p => p.id === promptId);
