@@ -949,7 +949,7 @@ app.post('/api/v1/chats/:chatId/prompts/preprocess', (req, res) => {
     chat.last_updated_at = new Date().toISOString();
     console.log(`Prompt preprocessed and added to chat ID: ${chatId}, Prompt ID: ${promptId}`);
     console.log(`Prompt Object: ${promptObj}`);
-    res.status(200).json(promptObj);
+    res.status(202).json(promptObj);
 });
 // POST process prompt
 app.post('/api/v1/prompts/:promptId/process', delayMiddleware(4000), (req, res) => {
