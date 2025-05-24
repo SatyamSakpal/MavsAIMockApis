@@ -896,6 +896,7 @@ function generateTitle(prompt) {
 // ---------------- Routes ---------------- //
 // GET all chats
 app.get('/api/v1/chats', (req, res) => {
+    res.status(500).json('not found');
     console.log('GET /api/v1/chats called');
     const chatsWithoutPrompts = appState.chats.map((_a) => {
         var { prompts } = _a, chatWithoutPrompts = __rest(_a, ["prompts"]);
