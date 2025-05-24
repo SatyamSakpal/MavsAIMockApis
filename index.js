@@ -896,7 +896,6 @@ function generateTitle(prompt) {
 // ---------------- Routes ---------------- //
 // GET all chats
 app.get('/api/v1/chats', (req, res) => {
-    res.status(500).json('not found');
     console.log('GET /api/v1/chats called');
     const chatsWithoutPrompts = appState.chats.map((_a) => {
         var { prompts } = _a, chatWithoutPrompts = __rest(_a, ["prompts"]);
@@ -907,6 +906,8 @@ app.get('/api/v1/chats', (req, res) => {
 // POST create new chat with initial prompt
 app.post('/api/v1/chats', (req, res) => {
     console.log('POST /api/v1/chats called with body:', req.body);
+    res.status(500).json('not found');
+    return;
     const { prompt_text } = req.body;
     const chatId = (0, uuid_1.v4)();
     const timestamp = new Date().toISOString();
@@ -978,6 +979,7 @@ app.post('/api/v1/prompts/:promptId/process', delayMiddleware(4000), (req, res) 
 // GET all prompts of a chat
 app.get('/api/v1/chats/:chatId/prompts', (req, res) => {
     console.log(`GET /api/v1/chats/${req.params.chatId}/prompts called`);
+    res.status(500).json('not found');
     const { chatId } = req.params;
     const chat = appState.chats.find(c => c.id === chatId);
     if (!chat) {
